@@ -11,7 +11,7 @@ if (!Memory.creep_number) {
 // make a harvester if we can
 for (var name in Game.spawns) {
     var spawn = Game.spawns[name];
-    if (!spawn.spawning && spawn.energy > 0) {
+    if (!spawn.spawning && spawn.energy > 120) {
         creep_types.harvester.make(spawn);
     }
 }
